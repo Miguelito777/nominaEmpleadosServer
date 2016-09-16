@@ -1,8 +1,7 @@
 <?php
 	
-	if (isset($_GET["login"])) {
-		echo "Hola Mundo desde servidor remoto";
+	if (isset($_POST["loginUser"])) {
+		$login = json_decode($_POST["loginUser"], true);
+		echo "2";
 	}
-
-
 ?>
